@@ -20,19 +20,25 @@
             <div class="col-lg-6">
               <div class="input-group">
                 <span class="input-group-btn">
-                  <button class="btn btn-default" type="button">Go!</button>
+                  <button id="add-btn" class="btn btn-default" type="button">Add</button>
                 </span>
-                <input type="text" class="form-control" placeholder="Search for...">
+                <input id="add-input" type="text" class="form-control" placeholder="Add a word to the Dictionary">
               </div><!-- /input-group -->
             </div><!-- /.col-lg-6 -->
 
             <div class="col-lg-6">
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search for...">
+                <input id="search-input" type="text" class="form-control" placeholder="Check if a word exists in the Dictionary">
                 <span class="input-group-btn">
-                  <button class="btn btn-default" type="button">Go!</button>
+                  <button id="search-btn" class="btn btn-default" type="button">Search</button>
                 </span>
               </div><!-- /input-group -->
+                <div id="success" class="alert alert-success d-none mt-2" role="alert">
+                    <p class="mb-0">This word exists in the Dictionary.</p>
+                </div>
+                <div id="danger" class="alert alert-danger d-none mt-2" role="alert">
+                    <p class="mb-0">The word is not in the Dictionary.</p>
+                </div>
             </div><!-- /.col-lg-6 -->
 
         </div>
